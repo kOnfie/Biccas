@@ -1,0 +1,34 @@
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/mixins";
+
+@import "./components/container";
+@import "./components/custom-button";
+
+@import "./layouts/header";
+
+body {
+  min-height: 100%;
+
+  font-family: $font-inter;
+  font-weight: 500;
+  color: $color-black;
+  line-height: 1;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1;
+}
+
+button {
+  background: transparent;
+
+  cursor: pointer;
+}
