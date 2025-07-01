@@ -12,3 +12,11 @@
   left: 0;
   z-index: 5;
 }
+
+@mixin section-padding {
+  padding: 8.125rem 0;
+
+  @media (max-width: $bp-tablet) {
+    padding: 2rem 0;
+  }
+}
