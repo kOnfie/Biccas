@@ -11,6 +11,7 @@
 @import "./layouts/collabs";
 @import "./layouts/support";
 @import "./layouts/feature";
+@import "./layouts/benefit";
 
 body {
   min-height: 100%;
@@ -70,6 +71,20 @@ button {
     right: 30%;
 
     background: #e7e4e4;
+  }
+
+  &-4 {
+    top: 451px;
+    left: -230px;
+
+    background: #ffd6d6;
+  }
+
+  &-5 {
+    bottom: -634px;
+    right: 0;
+
+    background: #54be96;
   }
 
   @media (max-width: $bp-tablet) {

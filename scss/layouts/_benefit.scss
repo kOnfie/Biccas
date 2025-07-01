@@ -1,0 +1,171 @@
+.benefit {
+  position: relative;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  &__description {
+    max-width: 29.4375rem;
+  }
+
+  &__image {
+    max-width: 28.125rem;
+    width: 100%;
+
+    position: relative;
+
+    &--block {
+      display: flex;
+      align-items: center;
+
+      padding: 0.75rem 1.25rem;
+
+      background-color: $color-white;
+      box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 0.625rem;
+
+      position: absolute;
+
+      img {
+        margin-right: 1rem;
+      }
+
+      &--income {
+        top: 7.5625rem;
+        right: -4.3125rem;
+      }
+
+      &--transfer {
+        display: flex;
+        gap: 1rem;
+
+        bottom: -0.875rem;
+        left: -6.625rem;
+
+        padding: 1.375rem 1.5625rem;
+
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+
+    &--info {
+      display: grid;
+      row-gap: 0.5rem;
+    }
+
+    &--subtitle {
+      color: $color-gray;
+      font-size: 0.75rem;
+
+      font-weight: 400;
+    }
+
+    &--title {
+      font-size: 1rem;
+    }
+
+    &--expert {
+      top: 2.25rem;
+      left: -7.75rem;
+    }
+
+    &--name {
+      font-size: 1rem;
+      margin-bottom: 1.125rem;
+    }
+
+    &--job {
+      font-size: 0.75rem;
+      color: $color-gray;
+
+      margin-right: 1.75rem;
+    }
+
+    &--laptop {
+      border-radius: 1.25rem;
+
+      display: block;
+    }
+
+    &--decor {
+      position: absolute;
+      bottom: 13.125rem;
+      left: -4.125rem;
+
+      transform: rotate(-15deg);
+
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.125rem;
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 1.875rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+  }
+
+  @media (max-width: $bp-laptop-m) {
+    &__image {
+      &--block {
+        &--income {
+          top: -1.4375rem;
+          right: -0.3125rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $bp-laptop-s) {
+    &__body {
+      flex-direction: column;
+
+      row-gap: 3rem;
+    }
+
+    &__description {
+      max-width: 100%;
+    }
+
+    &__image {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    &__image {
+      &--decor {
+        display: none;
+      }
+
+      &--expert {
+        top: auto;
+        left: 0.25rem;
+        bottom: -7rem;
+      }
+
+      &--block {
+        &--transfer {
+          left: 1.375rem;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 .feature {
   @include section-padding;
+  position: relative;
+  z-index: 10;
 
   &__header {
     display: flex;
