@@ -4,8 +4,12 @@
 
 @import "./components/container";
 @import "./components/custom-button";
+@import "./components/title";
 
 @import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/collabs";
+@import "./layouts/support";
 
 body {
   min-height: 100%;
@@ -14,6 +18,7 @@ body {
   font-weight: 500;
   color: $color-black;
   line-height: 1;
+  font-size: 1.125rem;
 }
 
 .wrap {
@@ -31,4 +36,42 @@ button {
   background: transparent;
 
   cursor: pointer;
+}
+
+.elips {
+  position: absolute;
+
+  z-index: 2;
+
+  border-radius: 50%;
+
+  width: 634px;
+  height: 634px;
+
+  filter: blur(500px);
+
+  &-1 {
+    top: -20%;
+    left: -20%;
+
+    background: #52bdaa;
+  }
+
+  &-2 {
+    top: -18%;
+    right: 15%;
+
+    background: #ffd6d6;
+  }
+
+  &-3 {
+    top: 30%;
+    right: 30%;
+
+    background: #e7e4e4;
+  }
+
+  @media (max-width: $bp-tablet) {
+    width: 100%;
+  }
 }

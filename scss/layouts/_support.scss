@@ -1,0 +1,138 @@
+.support {
+  padding: 3.75rem 0;
+
+  background-color: $background-violet;
+
+  &__body {
+    display: flex;
+    align-items: self-start;
+    column-gap: 1.6875rem;
+  }
+
+  &__description {
+    max-width: 40.25rem;
+  }
+
+  &__title {
+    margin-bottom: 1.875rem;
+  }
+
+  &__subtitle {
+    color: $color-gray;
+    margin-bottom: 4.5625rem;
+    line-height: 1.7;
+  }
+
+  &__statistics {
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+  }
+
+  &__statistic {
+    display: grid;
+    row-gap: 1.125rem;
+
+    &--icons {
+      color: $color-yellow;
+
+      .not-active {
+        color: $color-gray;
+      }
+    }
+
+    &--rating {
+      font-weight: 500;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &--description {
+      color: $color-gray;
+    }
+  }
+
+  &__items {
+    display: grid;
+    row-gap: 1.875rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: self-start;
+    column-gap: 1.3125rem;
+
+    &--img {
+      flex: 0 0 60px;
+
+      display: grid;
+      place-content: center;
+
+      height: 60px;
+
+      background-color: $color-white;
+
+      box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &--title {
+      font-size: 1.75rem;
+      font-weight: 700;
+
+      margin-bottom: 0.625rem;
+    }
+
+    &--description {
+      color: $color-gray;
+      line-height: 1.7;
+    }
+  }
+
+  @media (max-width: $bp-laptop-s) {
+    &__body {
+      flex-direction: column;
+      row-gap: 5rem;
+    }
+
+    &__description {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: $bp-mobile-l) {
+    padding: 2rem 0;
+
+    &__body {
+      row-gap: 2.5rem;
+    }
+
+    &__statistics {
+      flex-direction: column;
+      align-items: self-start;
+      row-gap: 1.5rem;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+    }
+
+    &__item {
+      &--title {
+        font-size: 1.25rem;
+      }
+
+      &--description {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+.hero {
+  padding-top: 8.125rem;
+
+  position: relative;
+  z-index: 5;
+
+  &__body {
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+
+    gap: 1rem;
+  }
+
+  &__title {
+    font-size: 5rem;
+    text-align: left;
+
+    margin-bottom: 1.875rem;
+  }
+
+  &__line {
+    margin-bottom: 3.125rem;
+  }
+
+  &__description {
+    margin-bottom: 3.125rem;
+
+    line-height: 1.7;
+
+    max-width: 28.8125rem;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    column-gap: 2.5rem;
+
+    &--trial {
+      padding: 1.25rem 1.875rem;
+
+      border-radius: 2.5rem;
+    }
+
+    &--demo {
+      display: flex;
+      align-items: center;
+
+      column-gap: 1.125rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    &--person {
+      max-width: 25.625rem;
+
+      display: block;
+    }
+
+    &--card {
+      position: absolute;
+      bottom: 2rem;
+      right: -5.625rem;
+      z-index: 5;
+
+      max-width: 9.125rem;
+
+      transform: rotate(15deg);
+    }
+
+    &--decor {
+      position: absolute;
+
+      &--yellow {
+        top: 1.625rem;
+        right: -2.5rem;
+        z-index: 5;
+
+        transform: rotate(15deg);
+      }
+
+      &--red {
+        bottom: -1.8125rem;
+        right: 3.25rem;
+        z-index: 5;
+
+        transform: rotate(15deg);
+      }
+
+      &--violet {
+        top: 10.8125rem;
+        left: -3.5rem;
+        z-index: 5;
+
+        transform: rotate(-15deg);
+      }
+    }
+
+    &--block {
+      position: absolute;
+      z-index: 5;
+
+      background-color: $color-white;
+      border-radius: 0.625rem;
+
+      padding: 0.875rem 1.125rem;
+
+      button {
+        padding: 0.3125rem 1rem;
+        border-radius: 2.5rem;
+      }
+
+      &--amount {
+        top: 1.875rem;
+        left: -11.25rem;
+      }
+
+      &--income {
+        bottom: 2.1875rem;
+        left: -4.75rem;
+      }
+
+      &--body {
+        display: flex;
+        align-items: center;
+        column-gap: 5.375rem;
+
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 0.3125rem;
+      }
+    }
+
+    &--info {
+      display: grid;
+      row-gap: 0.5rem;
+    }
+
+    &--subtitle {
+      color: $color-gray;
+      font-size: 0.75rem;
+
+      font-weight: 400;
+    }
+
+    &--title {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: $bp-laptop-m) {
+    &__title {
+      font-size: 3rem;
+      max-width: 34.6875rem;
+      line-height: 1.3;
+    }
+
+    &__tabs {
+      flex-direction: column;
+      align-items: start;
+
+      row-gap: 2rem;
+
+      button {
+        width: 100%;
+      }
+
+      &--demo {
+        justify-content: center;
+      }
+    }
+
+    &__image {
+      &--block {
+        &--amount {
+          top: 0.9375rem;
+          left: -1.875rem;
+        }
+
+        &--income {
+          bottom: -0.9375rem;
+          left: 1.5625rem;
+        }
+      }
+
+      &--decor {
+        display: none;
+      }
+
+      &--card {
+        bottom: -2rem;
+        right: 0px;
+      }
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    padding-top: 2rem;
+
+    &__body {
+      flex-direction: column;
+      row-gap: 4rem;
+    }
+
+    &__title {
+      max-width: 100%;
+    }
+
+    &__description {
+      max-width: 100%;
+    }
+
+    &__image {
+      margin: 0 auto;
+
+      &--block {
+        &--amount {
+          top: -0.9375rem;
+        }
+      }
+
+      &--card {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: $bp-mobile-xl) {
+    &__body {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__line {
+      margin-bottom: 2rem;
+    }
+
+    &__description {
+      margin-bottom: 2rem;
+    }
+
+    &__image {
+      &--person {
+        width: 100%;
+      }
+    }
+  }
+}
