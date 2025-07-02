@@ -1,15 +1,15 @@
 .footer {
   background-color: $color-black-blue;
 
-  padding: 130px 0 40px;
+  padding: 8.125rem 0 2.5rem;
 
   &__dowith {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    column-gap: 101px;
+    column-gap: 6.3125rem;
 
-    margin-bottom: 170px;
+    margin-bottom: 10.625rem;
 
     &--info {
       flex: 40%;
@@ -18,25 +18,25 @@
     &--title {
       color: $color-white;
 
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
 
     &--description {
       color: $color-gray;
       line-height: 1.7;
 
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
 
     &--icon {
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
 
     &--photos {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 1.25rem;
 
       img {
         border-radius: 50%;
@@ -47,32 +47,32 @@
       align-self: flex-start;
 
       background-color: #222938;
-      border-radius: 20px;
+      border-radius: 1.25rem;
 
-      padding: 40px 86px 66px;
+      padding: 2.5rem 5.375rem 4.125rem;
 
       flex: 52%;
 
       text-align: center;
 
       &--icon {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
       }
 
       h5 {
         color: $color-white;
-        font-size: 30px;
-        margin-bottom: 10px;
+        font-size: 1.875rem;
+        margin-bottom: 0.625rem;
       }
 
       form {
         text-align: left;
 
         display: grid;
-        row-gap: 20px;
+        row-gap: 1.25rem;
 
         label {
-          margin-bottom: 20px;
+          margin-bottom: 1.25rem;
 
           display: block;
 
@@ -82,13 +82,13 @@
         textarea {
           resize: none;
 
-          height: 80px;
+          height: 5rem;
         }
 
         button {
-          padding: 21px 0;
+          padding: 1.3125rem 0;
 
-          border-radius: 10px;
+          border-radius: 0.625rem;
 
           width: 100%;
         }
@@ -100,7 +100,7 @@
         text-align: right;
 
         p {
-          margin-top: 10px;
+          margin-top: 0.625rem;
 
           color: $color-gray;
           line-height: 1.7;
@@ -116,16 +116,16 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    column-gap: 32px;
+    column-gap: 2rem;
 
     &--logo {
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
 
     &--description {
       color: $color-gray;
 
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
 
     &--form {
@@ -133,25 +133,25 @@
     }
 
     &--input {
-      border-radius: 70px;
+      border-radius: 4.375rem;
 
-      border: 2px solid $color-gray;
+      border: 0.125rem solid $color-gray;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
+      gap: 1rem;
 
-      padding: 7px;
+      padding: 0.4375rem;
 
-      max-width: 410px;
+      max-width: 25.625rem;
 
       input {
         background: transparent;
 
         height: 100%;
 
-        padding-left: 13px;
+        padding-left: 0.8125rem;
 
         flex: 100%;
 
@@ -164,37 +164,65 @@
 
       button {
         background-color: $color-green;
-        min-width: 46px;
-        height: 46px;
+        min-width: 2.875rem;
+        height: 2.875rem;
         border-radius: 50%;
 
         display: grid;
         place-content: center;
+
+        transition: all 0.3s ease-in-out;
+
+        svg {
+          color: $color-white;
+
+          transition: all 0.3s ease-in-out;
+        }
+
+        @media (any-hover: hover) {
+          &:hover {
+            outline: 2px solid $color-green;
+
+            background-color: transparent;
+
+            svg {
+              color: $color-green;
+            }
+          }
+        }
       }
     }
 
     &--links {
       display: flex;
-      gap: 64px;
+      gap: 4rem;
       flex-wrap: wrap;
     }
 
     &--item {
       h6 {
         color: $color-white;
-        font-size: 18px;
+        font-size: 1.125rem;
 
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
       }
 
       ul {
         display: grid;
-        gap: 20px;
+        gap: 1.25rem;
 
         li {
           a {
             color: $color-gray;
             line-height: 1.4;
+
+            transition: color 0.2s ease-in-out;
+
+            @media (any-hover: hover) {
+              &:hover {
+                color: $color-white;
+              }
+            }
           }
         }
       }
@@ -205,9 +233,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
 
-    margin-top: 60px;
+    margin-top: 3.75rem;
 
     p {
       color: $color-white;
@@ -217,27 +245,27 @@
 
   @media (max-width: $bp-laptop-l) {
     &__dowith {
-      column-gap: 60px;
+      column-gap: 3.75rem;
 
       &--description {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
 
       &--form {
-        padding: 40px 50px;
+        padding: 2.5rem 3.125rem;
       }
     }
   }
 
   @media (max-width: $bp-laptop-s) {
-    padding: 50px 0;
+    padding: 3.125rem 0;
 
     &__dowith {
       flex-direction: column;
 
-      row-gap: 50px;
+      row-gap: 3.125rem;
 
-      margin-bottom: 80px;
+      margin-bottom: 5rem;
 
       &--form {
         width: 100%;
@@ -246,7 +274,7 @@
 
     &__info {
       flex-direction: column;
-      row-gap: 40px;
+      row-gap: 2.5rem;
 
       &--form {
         margin: 0 auto;
@@ -268,16 +296,16 @@
 
   @media (max-width: $bp-tablet) {
     &__dowith {
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
   }
 
   @media (max-width: $bp-mobile-xl) {
-    padding: 50px 0 40px;
+    padding: 3.125rem 0 2.5rem;
 
     &__dowith {
       &--form {
-        padding: 20px 30px;
+        padding: 1.25rem 1.875rem;
       }
     }
 
@@ -286,24 +314,24 @@
       &--input {
         width: 100%;
 
-        gap: 0px;
+        gap: 0rem;
         input {
-          width: 200px;
+          width: 12.5rem;
         }
       }
     }
   }
 
   @media (max-width: $bp-mobile-l) {
-    padding: 50px 0 40px;
+    padding: 3.125rem 0 2.5rem;
 
     &__dowith {
-      row-gap: 20px;
+      row-gap: 1.25rem;
 
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
 
       &--form {
-        padding: 15px;
+        padding: 0.9375rem;
       }
     }
   }

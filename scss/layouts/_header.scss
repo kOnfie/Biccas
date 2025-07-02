@@ -18,6 +18,9 @@
     align-items: center;
     column-gap: 8.125rem;
 
+    position: relative;
+    z-index: 10;
+
     ul {
       display: flex;
       align-items: center;
@@ -64,8 +67,8 @@
   &__burger {
     display: none;
 
-    width: 30px;
-    height: 20px;
+    width: 1.875rem;
+    height: 1.25rem;
 
     position: relative;
 
@@ -73,7 +76,7 @@
       display: block;
 
       @include burger-el;
-      top: 9px;
+      top: 0.5625rem;
     }
 
     &::after,
@@ -99,12 +102,12 @@
 
       &::before {
         transform: rotate(45deg);
-        top: 9px;
+        top: 0.5625rem;
       }
 
       &::after {
         transform: rotate(-45deg);
-        bottom: 9px;
+        bottom: 0.5625rem;
       }
     }
   }
@@ -143,6 +146,8 @@
 
         a {
           font-size: 2rem;
+
+          cursor: pointer;
         }
       }
 
@@ -156,9 +161,6 @@
 
       font-size: 1.5rem;
       width: 100%;
-      button {
-        // width: 100%;
-      }
     }
   }
 

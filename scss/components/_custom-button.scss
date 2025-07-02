@@ -1,4 +1,15 @@
 .custom-button {
   background-color: $color-green;
   color: $color-white;
+
+  transition: all 0.2s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      outline: 2px solid $color-green;
+      color: $color-green;
+
+      background-color: transparent;
+    }
+  }
 }

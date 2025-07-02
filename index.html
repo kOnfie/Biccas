@@ -36,8 +36,8 @@
               </ul>
 
               <div class="header__tabs">
-                <button class="header__tabs--login">Login</button>
-                <button class="header__tabs--singup custom-button">Sign Up</button>
+                <button type="button" id="loginButton" class="header__tabs--login">Login</button>
+                <button type="button" id="signupButton" class="header__tabs--singup custom-button">Sign Up</button>
               </div>
             </nav>
 
@@ -397,7 +397,7 @@
       <!-- main end -->
 
       <!-- choose -->
-      <section class="choose">
+      <section class="choose" id="choose">
         <div class="container">
           <div class="choose__body">
             <h2 class="choose__title title">Choose Plan That’s Right For You</h2>
@@ -586,7 +586,7 @@
 
                 <h5>Get Started</h5>
 
-                <form>
+                <form id="dowith-form">
                   <div>
                     <label for="email">Email</label>
                     <input
@@ -615,7 +615,7 @@
                   <div class="footer__dowith--form--actions">
                     <button class="custom-button" type="submit">Request Demo</button>
 
-                    <p>or <a href="#">Start Free Trial</a></p>
+                    <p>or <a href="#choose">Start Free Trial</a></p>
                   </div>
                 </form>
               </div>
@@ -627,7 +627,7 @@
 
                 <p class="footer__info--description">Get started noew try our product</p>
 
-                <div class="footer__info--input">
+                <form id="email__form" class="footer__info--input">
                   <input
                     type="email"
                     name="email"
@@ -637,12 +637,12 @@
                     placeholder="Enter your email"
                   />
 
-                  <button>
+                  <button type="submit">
                     <svg width="24" height="24" viewBox="0 0 24 24">
                       <use href="./images/sprite.svg#footer__arrow"></use>
                     </svg>
                   </button>
-                </div>
+                </form>
               </div>
 
               <div class="footer__info--links">
@@ -711,6 +711,16 @@
         </div>
       </footer>
       <!-- footer end -->
+
+      <div class="modal" id="authModal">
+        <div class="modal__content">
+          <button class="modal__close" id="modalCloseButton">&times;</button>
+
+          <div class="auth__form" id="authForm">
+            <h2 class="auth__title">Welcome Back 👋</h2>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

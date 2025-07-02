@@ -6,6 +6,7 @@
 @import "./components/custom-button";
 @import "./components/title";
 @import "./components/custom-input";
+@import "./components/modal";
 
 @import "./layouts/header";
 @import "./layouts/hero";
@@ -15,6 +16,10 @@
 @import "./layouts/benefit";
 @import "./layouts/choose";
 @import "./layouts/footer";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100%;
@@ -45,8 +50,6 @@ button {
 
 .elips {
   position: absolute;
-
-  z-index: 2;
 
   border-radius: 50%;
 
