@@ -5,6 +5,7 @@
 @import "./components/container";
 @import "./components/custom-button";
 @import "./components/title";
+@import "./components/custom-input";
 
 @import "./layouts/header";
 @import "./layouts/hero";
@@ -13,6 +14,7 @@
 @import "./layouts/feature";
 @import "./layouts/benefit";
 @import "./layouts/choose";
+@import "./layouts/footer";
 
 body {
   min-height: 100%;
