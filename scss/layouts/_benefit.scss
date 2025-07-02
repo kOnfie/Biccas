@@ -117,12 +117,10 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    column-gap: 1.25rem;
+    @include benefit-item;
   }
 
-  @media (max-width: $bp-laptop-m) {
+  @media (max-width: $bp-laptop-l) {
     &__image {
       &--block {
         &--income {

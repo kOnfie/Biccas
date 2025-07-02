@@ -338,6 +338,12 @@ table {
 .hero__image--title {
   font-size: 1rem;
 }
+@media (max-width: 1299.98px) {
+  .hero__image--card {
+    bottom: -2rem;
+    right: 0px;
+  }
+}
 @media (max-width: 1099.98px) {
   .hero__title {
     font-size: 3rem;
@@ -732,7 +738,7 @@ table {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
 }
-@media (max-width: 1099.98px) {
+@media (max-width: 1299.98px) {
   .benefit__image--block--income {
     top: -1.4375rem;
     right: -0.3125rem;
@@ -761,6 +767,208 @@ table {
   }
   .benefit__image--block--transfer {
     left: 1.375rem;
+  }
+}
+
+.choose {
+  padding: 8.125rem 0;
+}
+@media (max-width: 767.98px) {
+  .choose {
+    padding: 2rem 0;
+  }
+}
+.choose__body {
+  position: relative;
+  z-index: 10;
+}
+.choose__title {
+  max-width: 30.75rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.choose__subtitle {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #a6a6a6;
+}
+.choose__tabs {
+  box-shadow: 0rem 0.25rem 0.5625rem 0rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  max-width: 22rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+  margin-bottom: 4.1875rem;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  border-radius: 0.625rem;
+}
+.choose__tabs--button {
+  border-radius: 0.625rem;
+  padding: 1.1875rem 2.4375rem;
+  transition: all 0.2s ease-in-out;
+}
+.choose__tabs--button.active {
+  background-color: #54bd95;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .choose__tabs--button:hover {
+    background-color: #54bd95;
+    color: #fff;
+  }
+}
+.choose__cards {
+  display: flex;
+  -moz-column-gap: 1.8125rem;
+       column-gap: 1.8125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose__card {
+  width: 33%;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0rem 0.25rem 0.5625rem 0rem rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 1.25rem 1.5625rem;
+  text-align: center;
+}
+.choose__card--plan {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+.choose__card--description {
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  color: #a6a6a6;
+  line-height: 1.5;
+}
+.choose__card--save {
+  background-color: #85dab9;
+  border-radius: 0.625rem;
+  display: block;
+  width: 8.5rem;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.8125rem 0.75rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.choose__card--price {
+  position: relative;
+  font-size: 3.125rem;
+  font-weight: 600;
+  display: inline;
+}
+.choose__card--price span {
+  color: #a6a6a6;
+  position: absolute;
+  top: -0.9375rem;
+  left: calc(50% - 2.25rem);
+  font-size: 1.125rem;
+}
+.choose__card--benefits {
+  background-color: #f9fafb;
+  padding: 1.625rem 1.9375rem;
+  margin-top: 1.875rem;
+  border-radius: 0.625rem;
+}
+.choose__card--list {
+  display: grid;
+  row-gap: 1.375rem;
+  margin-bottom: 1.6875rem;
+}
+.choose__card--item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  text-align: left;
+  line-height: 1.2;
+}
+.choose__card--item svg {
+  min-width: 2rem;
+}
+.choose__card--button {
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0rem 0.25rem 0.5625rem 0rem rgba(0, 0, 0, 0.05);
+  display: grid;
+  place-items: center;
+  padding: 1.4375rem 4.25rem;
+  margin: 0 auto;
+  color: #54bd95;
+  line-height: 1.3;
+  width: 100%;
+}
+.choose__card--popular {
+  background-color: #54bd95;
+  align-self: flex-start;
+}
+.choose__card--popular .choose__card--plan, .choose__card--popular .choose__card--description, .choose__card--popular .choose__card--price, .choose__card--popular .choose__card--price span {
+  color: #fff;
+}
+.choose__card--popular .choose__card--price {
+  margin-bottom: 1rem;
+}
+.choose__card--popular button {
+  background-color: #54bd95;
+  color: #fff;
+}
+@media (max-width: 1023.98px) {
+  .choose__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1.8125rem;
+  }
+  .choose__card {
+    order: 2;
+    width: 50%;
+  }
+  .choose__card--popular {
+    order: 1;
+  }
+}
+@media (max-width: 767.98px) {
+  .choose {
+    padding-top: 9rem;
+  }
+  .choose__title {
+    margin-bottom: 1rem;
+  }
+  .choose__subtitle {
+    margin-bottom: 1.5rem;
+  }
+  .choose__cards {
+    row-gap: 1rem;
+  }
+  .choose__card {
+    width: 100%;
+  }
+  .choose__tabs {
+    margin-bottom: 1.3rem;
+  }
+}
+@media (max-width: 424.98px) {
+  .choose__card {
+    padding: 0.9375rem;
+  }
+  .choose__card--benefits {
+    padding: 0.9375rem;
+  }
+  .choose__tabs {
+    max-width: 100%;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .choose__tabs button {
+    width: 100%;
   }
 }
 

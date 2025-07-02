@@ -149,6 +149,15 @@
     }
   }
 
+  @media (max-width: $bp-laptop-l) {
+    &__image {
+      &--card {
+        bottom: -2rem;
+        right: 0px;
+      }
+    }
+  }
+
   @media (max-width: $bp-laptop-m) {
     &__title {
       font-size: 3rem;
